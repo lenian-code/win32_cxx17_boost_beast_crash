@@ -1,0 +1,13 @@
+[requires]
+boost/1.73.0
+
+[generators]
+cmake
+
+[options]
+boost:shared=False
+boost:header_only=False
+
+[imports]
+bin, *.dll -> ./bin
+lib, *.lib -> ./bin
