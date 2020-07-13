@@ -2,6 +2,18 @@
 #include <boost/beast.hpp>
 #include <boost/asio.hpp>
 
+/*
+This project fails to build with C1001 at  boost/beast/http/impl/serializer.hpp(54) "::do_visit"
+
+Visual Studio 15.9.24
+Win32
+Release
+Optimizations /O2 or /Ox
+C++17
+
+Boost 1.73.0
+*/
+
 using namespace std;
 int main(int argc, char *argv[])
 {

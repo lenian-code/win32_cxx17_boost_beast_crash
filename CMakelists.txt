@@ -3,7 +3,7 @@
 ###########################################
 cmake_minimum_required(VERSION 3.16)
 
-set(PROJECT_NAME "miniproject")
+set(PROJECT_NAME "c1001_with_beast")
 
 project(${PROJECT_NAME})
 
@@ -50,7 +50,7 @@ endif()
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 
-add_executable(${PROJECT_NAME} include/main.cpp )
+add_executable(${PROJECT_NAME} src/main.cpp )
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${CONAN_INCLUDE_DIRS})
 target_link_libraries(${PROJECT_NAME} CONAN_PKG::boost )
